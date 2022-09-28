@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: (https://www.frontendmentor.io/solutions/tip-calculator-app-using-javascript-classes-and-sass-4XlylDO0Rh)
+- Live Site URL: (https://roonder-tipcalculator.netlify.app/)
 
 ## My process
 
