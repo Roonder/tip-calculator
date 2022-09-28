@@ -3,42 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="build/css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
+  <h1 class="splitter">SPLI<br>TTER</h1>  
 
-  Bill
+  <main class="contenedor">
+    <form action="#" class="tip-form">
+      <label for="bill">Bill</label>
+      <div class="number-input" id="billDiv">
+        <img src="images/icon-dollar.svg" alt="Dollar Icon">
+        <input 
+          type="text"
+          id="bill"
+          name="bill"
+          autocomplete="off"
+          placeholder="0"
+        />
+      </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <fieldset class="tip-select">
+        <legend>Select Tip %</legend>
 
-  Number of People
+        <input type="radio" name="tip-percentage" id="tip-5" value="1.05">
+        <label for="tip-5">5%</label>
 
-  Tip Amount
-  / person
+        <input type="radio" name="tip-percentage" id="tip-10" value="1.10">
+        <label for="tip-10">10%</label>
 
-  Total
-  / person
+        <input type="radio" name="tip-percentage" id="tip-15" value="1.15">
+        <label for="tip-15">15%</label>
 
-  Reset
-  
-  <div class="attribution">
+        <input type="radio" name="tip-percentage" id="tip-25" value="1.25">
+        <label for="tip-25">25%</label>
+
+        <input type="radio" name="tip-percentage" id="tip-50" value="1.50">
+        <label for="tip-50">50%</label>
+
+        <input type="text" name="tip-percentage" id="tip-c" placeholder="Custom" maxlength="20">
+      </fieldset> <!-- .tip-select -->
+
+      <label for="NoP">Number of People</label>
+      <div class="number-input" id="peopleDiv">
+        <img src="images/icon-person.svg" alt="Person Icon">
+        <input
+          type="text" 
+          name="NoP" 
+          id="NoP"
+          autocomplete="off"
+          placeholder="0"
+        />
+      </div>
+    </form>
+
+    <section id="tip-summary">
+      <div class="amount">
+        <p class="amount__title">Tip Amount<br><span>/ person</span></p>
+        <p id="amount" class="amount__number">$<span></span></p>
+      </div>
+      <div class="total">
+        <p class="total__title">Total<br><span>/ person</span></p>
+        <p id="total" class="total__number">$<span>0.00</span></p>
+      </div>
+
+      <button id="reset">Reset</button>
+    </section>
+  </main>
+
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="build/js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+{
+  "name": "tip-calculator-app-main",
+  "version": "1.0.0",
+  "description": "Tip Calculator App - Frontend Challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roonder/tip-calculator.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "JavaScript",
+    "Node.js"
+  ],
+  "author": "Roonder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roonder/tip-calculator/issues"
+  },
+  "homepage": "https://github.com/Roonder/tip-calculator#readme"
+}

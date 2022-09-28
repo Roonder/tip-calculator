@@ -1,0 +1,59 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+.contenedor{
+    width: 100%;
+    max-width: 37.5rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: v.$white;
+
+    .tip-form{
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    @include m.mobile{
+        display: flex;
+        align-items: center;
+        min-height: 100%;
+        max-width: fit-content;
+        border-radius: 2rem;
+    }
+}
+
+body{
+    background-color: v.$lightGrayishCyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: v.$mono;
+}
+
+.splitter{
+    font-size: 3.2rem;
+    color: v.$veryDarkCyan;
+    letter-spacing: 1rem;
+    font-weight: 700;
+    @include m.mobile{
+        margin: 10rem 0;
+    }
+}
+
+.error{
+    color: red;
+    text-align: right;
+    font-family: v.$mono;
+    font-size: 1.2rem;
+}

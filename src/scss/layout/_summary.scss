@@ -1,0 +1,96 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+#tip-summary{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: v.$veryDarkCyan;
+
+    .amount{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include m.mobile{
+            gap: 10rem;
+            &__title{
+                margin-left: 2rem;
+            }
+            &__number{
+                span{
+                    font-size: 4.2rem;
+                }
+                margin-right: 2rem;
+            }
+        }
+        &__title{
+            color: v.$white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: .05rem;
+            span{
+                font-size: 1.2rem;
+                color: v.$grayishCyan;
+            }
+        }
+        &__number{
+            color: v.$strongCyan;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+    }
+
+    .total{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include m.mobile{
+            gap: 10rem;
+            &__title{
+                margin-left: 2rem;
+            }
+            &__number{
+                span{
+                    font-size: 4.2rem;
+                }
+                margin-right: 2rem;
+            }
+        }
+        &__title{
+            color: v.$white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: .05rem;
+            span{
+                font-size: 1.2rem;
+                color: v.$grayishCyan;
+            }
+        }
+        &__number{
+            color: v.$strongCyan;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+    }
+}
+
+#reset{
+    padding: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: v.$veryDarkCyan;
+    text-transform: uppercase;
+    background-color: v.$strongCyan;
+    border-radius: 1rem;
+    border: none;
+    @include m.mobile{
+        margin-top: 10rem;
+    }
+
+    &:hover{
+        background-color: v.$lightGrayishCyan;
+    }
+
+}

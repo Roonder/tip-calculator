@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+
+/** Media Queries **/
+@mixin mobile {
+    @media (min-width: 769px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 1441px) {
+        @content;
+    }
+}
